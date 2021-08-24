@@ -2,18 +2,18 @@
 set -e
 
 function getGithubNpmToken {
-    read -p "Go to https://github.com/settings/tokens/new"
-    read -p "Fill note field with: NPM_GITHUB_TOKEN"
-    read -p "Fill expiration field with: No expiration"
-    read -p "Fill scopes field with: read:packages"
+    read -p "Go to https://github.com/settings/tokens/new and press <enter>"
+    read -p "Fill note field with: NPM_GITHUB_TOKEN and press <enter>"
+    read -p "Fill expiration field with: No expiration and press <enter>"
+    read -p "Fill scopes field with: write:packages, read:packages and press <enter>"
     read -sp 'Generate token and paste it: ' npm_github_token
 
     echo $npm_github_token
 }
 
 function getNpmToken {
-    read -p "Go to your dashlane"
-    read -p "Find NPM_TOKEN in your env var note"
+    read -p "Go to your dashlane and press <enter>"
+    read -p "Find NPM_TOKEN in your env var note and press <enter>"
     read -sp 'Paste it: ' npm_token
     echo $npm_token
 }
@@ -57,14 +57,24 @@ function configureNpmRegistry {
 }
 
 function installDenisCLI {
-    echo ""
+    echo "npm install -g @georgestech/denis-cli"
     npm install -g @georgestech/denis-cli 2>&1
 }
 
 function main {
-    read -p "Press <enter> to move on..."
-    configureGithubNpmRegistry
-    configureNpmRegistry
+    read -p "Follow the instructions and press <enter>"
+    
+    read -p "Do you need a NPM_GITHUB_TOKEN (y/n)? " need_npm_github_token
+    if [ "$need_npm_github_token" = "y" ]; then
+        configureGithubNpmRegistry
+    fi
+
+    echo
+    read -p "Do you need a NPM_TOKEN (y/n)? " need_npm_token
+    if [ "$need_npm_token" = "y" ]; then
+        configureNpmRegistry
+    fi
+
     installDenisCLI
 }
 
