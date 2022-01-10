@@ -124,6 +124,37 @@
       ],
       "stabilityDays": 7,
       "dependencyDashboardApproval": true
+    },
+    {
+      "prPriority": -1,
+      "groupName": "mongo-major",
+      "matchPackagePatterns": [
+        "mongo",
+        "mongoose"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "fastify-major",
+      "matchPackagePatterns": [
+        "fastify"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "pino-major",
+      "matchPackagePatterns": [
+        "pino"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
     }
   ]
 }
