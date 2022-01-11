@@ -1,0 +1,160 @@
+{
+  "enabled": true,
+  "dependencyDashboard": true,
+  "timezone": "Europe/Paris",
+  "schedule": [],
+  "rangeStrategy": "bump",
+  "prConcurrentLimit": 5,
+  "postUpdateOptions": [
+    "npmDedupe"
+  ],
+  "labels": [
+    "renovate",
+    "dependencies",
+    "self-hosted"
+  ],
+  "enabledManagers": [
+    "npm"
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "node",
+        "npm"
+      ],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": [
+        "@types/node"
+      ],
+      "allowedVersions": "<17"
+    },
+    {
+      "matchCurrentVersion": "<1.0.0",
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true
+    },
+    {
+      "prPriority": 1,
+      "groupName": "test",
+      "matchPackagePatterns": [
+        "jest",
+        "nyc",
+        "sinon",
+        "chai",
+        "mocha",
+        "nock",
+        "supertest"
+      ],
+      "automerge": true
+    },
+    {
+      "prPriority": 1,
+      "groupName": "linter",
+      "matchPackagePatterns": [
+        "eslint",
+        "lint-staged",
+        "prettier"
+      ],
+      "automerge": true
+    },
+    {
+      "prPriority": 1,
+      "groupName": "types",
+      "matchPackagePatterns": [
+        "@types/*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": ">=1.0.0",
+      "automerge": true
+    },
+    {
+      "prPriority": 1,
+      "groupName": "typescript-non-major",
+      "matchPackageNames": [
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
+      "prPriority": 0,
+      "groupName": "all-non-major",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "excludePackageNames": [
+        "@types/node",
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": ">=1.0.0"
+    },
+    {
+      "prPriority": -1,
+      "groupName": "typescript-major",
+      "matchPackageNames": [
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true
+    },
+    {
+      "prPriority": -1,
+      "groupName": "mongo-major",
+      "matchPackagePatterns": [
+        "mongo",
+        "mongoose"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "fastify-major",
+      "matchPackagePatterns": [
+        "fastify"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "pino-major",
+      "matchPackagePatterns": [
+        "pino"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ]
+    }
+  ]
+}
