@@ -1,0 +1,226 @@
+{
+  "enabled": true,
+  "dependencyDashboard": true,
+  "timezone": "Europe/Paris",
+  "schedule": [],
+  "rangeStrategy": "bump",
+  "prConcurrentLimit": 5,
+  "postUpdateOptions": [
+    "npmDedupe"
+  ],
+  "labels": [
+    "renovate",
+    "dependencies",
+    "self-hosted"
+  ],
+  "enabledManagers": [
+    "npm"
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": false
+  },
+  "includePaths": [
+    "packages/{{arg0}}/package.json"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "node",
+        "npm"
+      ],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": [
+        "@types/node"
+      ],
+      "allowedVersions": "<17"
+    },
+    {
+      "matchCurrentVersion": "<1.0.0",
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true
+    },
+    {
+      "prPriority": 1,
+      "groupName": "{{arg0}} test",
+      "matchPackagePatterns": [
+        "jest",
+        "nyc",
+        "sinon",
+        "chai",
+        "mocha",
+        "nock",
+        "supertest"
+      ],
+      "automerge": true,
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": 1,
+      "groupName": "{{arg0}} linter",
+      "matchPackagePatterns": [
+        "eslint",
+        "lint-staged",
+        "prettier"
+      ],
+      "automerge": true,
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": 1,
+      "groupName": "{{arg0}} types",
+      "matchPackagePatterns": [
+        "@types/*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": ">=1.0.0",
+      "automerge": true,
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": 1,
+      "groupName": "{{arg0}} typescript-non-major",
+      "matchPackageNames": [
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true,
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": 0,
+      "groupName": "{{arg0}} all-non-major",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "excludePackageNames": [
+        "@types/node",
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": ">=1.0.0",
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "{{arg0}} typescript-major",
+      "matchPackageNames": [
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true,
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "{{arg0}} mongo-major",
+      "matchPackagePatterns": [
+        "mongo",
+        "mongoose"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "{{arg0}} fastify-major",
+      "matchPackagePatterns": [
+        "fastify"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    },
+    {
+      "prPriority": -1,
+      "groupName": "{{arg0}} pino-major",
+      "matchPackagePatterns": [
+        "pino"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "labels": [
+        "{{arg0}}"
+      ]
+    }
+  ]
+}
