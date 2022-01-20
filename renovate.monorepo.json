@@ -52,21 +52,6 @@
       ]
     },
     {
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "stabilityDays": 7,
-      "dependencyDashboardApproval": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
-      ]
-    },
-    {
       "prPriority": 1,
       "groupName": "{{arg0}} test",
       "matchPackagePatterns": [
@@ -204,6 +189,8 @@
       "matchUpdateTypes": [
         "major"
       ],
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true,
       "matchFiles": [
         "packages/{{arg0}}/package.json"
       ],
@@ -222,6 +209,8 @@
       "matchUpdateTypes": [
         "major"
       ],
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true,
       "matchFiles": [
         "packages/{{arg0}}/package.json"
       ],
@@ -240,6 +229,8 @@
       "matchUpdateTypes": [
         "major"
       ],
+      "stabilityDays": 7,
+      "dependencyDashboardApproval": true,
       "matchFiles": [
         "packages/{{arg0}}/package.json"
       ],
