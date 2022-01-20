@@ -1,0 +1,10 @@
+{
+  "matchFiles": [
+    "packages/{{arg0}}/package.json"
+  ],
+  "branchPrefix": "renovate/{{arg0}}/",
+  "commitMessageAction": "Update {{arg0}}",
+  "addLabels": [
+    "{{arg0}}"
+  ]
+}

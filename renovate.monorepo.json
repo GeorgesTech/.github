@@ -42,13 +42,8 @@
       "matchCurrentVersion": "<1.0.0",
       "stabilityDays": 7,
       "dependencyDashboardApproval": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -57,13 +52,8 @@
       ],
       "stabilityDays": 7,
       "dependencyDashboardApproval": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -78,13 +68,8 @@
         "supertest"
       ],
       "automerge": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -95,13 +80,8 @@
         "prettier"
       ],
       "automerge": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -115,13 +95,8 @@
       ],
       "matchCurrentVersion": ">=1.0.0",
       "automerge": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -134,13 +109,8 @@
         "patch"
       ],
       "automerge": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -158,13 +128,8 @@
         "patch"
       ],
       "matchCurrentVersion": ">=1.0.0",
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -179,13 +144,8 @@
       ],
       "stabilityDays": 7,
       "dependencyDashboardApproval": true,
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -197,13 +157,8 @@
       "matchUpdateTypes": [
         "major"
       ],
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -214,13 +169,8 @@
       "matchUpdateTypes": [
         "major"
       ],
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     },
     {
@@ -231,13 +181,8 @@
       "matchUpdateTypes": [
         "major"
       ],
-      "matchFiles": [
-        "packages/{{arg0}}/package.json"
-      ],
-      "branchPrefix": "renovate/{{arg0}}/",
-      "commitMessageAction": "Update {{arg0}}",
-      "addLabels": [
-        "{{arg0}}"
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
       ]
     }
   ]
