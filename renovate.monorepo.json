@@ -41,14 +41,30 @@
     {
       "matchCurrentVersion": "<1.0.0",
       "stabilityDays": 7,
-      "dependencyDashboardApproval": true
+      "dependencyDashboardApproval": true,
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "commitMessageAction": "Update {{arg0}}",
+      "addLabels": [
+        "{{arg0}}"
+      ]
     },
     {
       "matchUpdateTypes": [
         "major"
       ],
       "stabilityDays": 7,
-      "dependencyDashboardApproval": true
+      "dependencyDashboardApproval": true,
+      "matchFiles": [
+        "packages/{{arg0}}/package.json"
+      ],
+      "branchPrefix": "renovate/{{arg0}}/",
+      "commitMessageAction": "Update {{arg0}}",
+      "addLabels": [
+        "{{arg0}}"
+      ]
     },
     {
       "prPriority": 1,
