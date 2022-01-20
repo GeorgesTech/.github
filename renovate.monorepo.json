@@ -173,7 +173,6 @@
       ]
     },
     {
-      "prPriority": -1,
       "groupName": "{{arg0}} typescript-major",
       "matchPackageNames": [
         "ts-node",
@@ -195,7 +194,6 @@
       ]
     },
     {
-      "prPriority": -1,
       "groupName": "{{arg0}} mongo-major",
       "matchPackagePatterns": [
         "mongo",
@@ -214,7 +212,6 @@
       ]
     },
     {
-      "prPriority": -1,
       "groupName": "{{arg0}} fastify-major",
       "matchPackagePatterns": [
         "fastify"
@@ -232,7 +229,6 @@
       ]
     },
     {
-      "prPriority": -1,
       "groupName": "{{arg0}} pino-major",
       "matchPackagePatterns": [
         "pino"
