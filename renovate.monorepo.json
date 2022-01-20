@@ -67,7 +67,6 @@
       ]
     },
     {
-      "prPriority": 1,
       "groupName": "{{arg0}} test",
       "matchPackagePatterns": [
         "jest",
@@ -89,7 +88,6 @@
       ]
     },
     {
-      "prPriority": 1,
       "groupName": "{{arg0}} linter",
       "matchPackagePatterns": [
         "eslint",
@@ -107,7 +105,6 @@
       ]
     },
     {
-      "prPriority": 1,
       "groupName": "{{arg0}} types",
       "matchPackagePatterns": [
         "@types/*"
@@ -128,7 +125,6 @@
       ]
     },
     {
-      "prPriority": 1,
       "groupName": "{{arg0}} typescript-non-major",
       "matchPackageNames": [
         "ts-node",
@@ -148,7 +144,6 @@
       ]
     },
     {
-      "prPriority": 0,
       "groupName": "{{arg0}} all-non-major",
       "matchPackagePatterns": [
         "*"
