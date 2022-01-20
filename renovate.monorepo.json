@@ -2,9 +2,14 @@
   "enabled": true,
   "dependencyDashboard": true,
   "timezone": "Europe/Paris",
-  "schedule": [],
+  "schedule": [
+    "after 7pm and before 7am every weekday",
+    "every weekend"
+  ],
+  "updateNotScheduled": false,
   "rangeStrategy": "bump",
   "prConcurrentLimit": 5,
+  "reviewersFromCodeOwners": true,
   "postUpdateOptions": [
     "npmDedupe"
   ],
@@ -19,9 +24,6 @@
   "vulnerabilityAlerts": {
     "enabled": false
   },
-  "includePaths": [
-    "packages/{{arg0}}/package.json"
-  ],
   "packageRules": [
     {
       "matchPackageNames": [
@@ -65,7 +67,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -82,7 +84,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -102,7 +104,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -121,7 +123,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -145,7 +147,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -166,7 +168,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -184,7 +186,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -201,7 +203,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     },
@@ -218,7 +220,7 @@
         "packages/{{arg0}}/package.json"
       ],
       "branchPrefix": "renovate/{{arg0}}/",
-      "labels": [
+      "addLabels": [
         "{{arg0}}"
       ]
     }
