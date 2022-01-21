@@ -57,64 +57,7 @@
       ]
     },
     {
-      "groupName": "{{arg0}} test",
-      "matchPackagePatterns": [
-        "jest",
-        "nyc",
-        "sinon",
-        "chai",
-        "mocha",
-        "nock",
-        "supertest"
-      ],
-      "automerge": true,
-      "extends": [
-        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
-      ]
-    },
-    {
-      "groupName": "{{arg0}} linter",
-      "matchPackagePatterns": [
-        "eslint",
-        "lint-staged",
-        "prettier"
-      ],
-      "automerge": true,
-      "extends": [
-        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
-      ]
-    },
-    {
-      "groupName": "{{arg0}} types",
-      "matchPackagePatterns": [
-        "@types/*"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "matchCurrentVersion": ">=1.0.0",
-      "automerge": true,
-      "extends": [
-        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
-      ]
-    },
-    {
-      "groupName": "{{arg0}} typescript-non-major",
-      "matchPackageNames": [
-        "ts-node",
-        "typescript"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "automerge": true,
-      "extends": [
-        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
-      ]
-    },
-    {
-      "groupName": "{{arg0}} all-non-major",
+      "groupName": "non-major all",
       "matchPackagePatterns": [
         "*"
       ],
@@ -133,7 +76,64 @@
       ]
     },
     {
-      "groupName": "{{arg0}} typescript-major",
+      "groupName": "test",
+      "matchPackagePatterns": [
+        "jest",
+        "nyc",
+        "sinon",
+        "chai",
+        "mocha",
+        "nock",
+        "supertest"
+      ],
+      "automerge": true,
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
+      ]
+    },
+    {
+      "groupName": "linter",
+      "matchPackagePatterns": [
+        "eslint",
+        "lint-staged",
+        "prettier"
+      ],
+      "automerge": true,
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
+      ]
+    },
+    {
+      "groupName": "types",
+      "matchPackagePatterns": [
+        "@types/*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": ">=1.0.0",
+      "automerge": true,
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
+      ]
+    },
+    {
+      "groupName": "non-major typescript",
+      "matchPackageNames": [
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true,
+      "extends": [
+        "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
+      ]
+    },
+    {
+      "groupName": "major typescript",
       "matchPackageNames": [
         "ts-node",
         "typescript"
@@ -146,10 +146,11 @@
       "dependencyDashboardApproval": true,
       "extends": [
         "github>GeorgesTech/.github:renovate.namespace({{arg0}})"
-      ]
+      ],
+      "commitMessageAction": "Update {{arg0}}"
     },
     {
-      "groupName": "{{arg0}} mongo-major",
+      "groupName": "major mongo",
       "matchPackagePatterns": [
         "mongo",
         "mongoose"
@@ -162,7 +163,7 @@
       ]
     },
     {
-      "groupName": "{{arg0}} fastify-major",
+      "groupName": "major fastify",
       "matchPackagePatterns": [
         "fastify"
       ],
@@ -174,7 +175,7 @@
       ]
     },
     {
-      "groupName": "{{arg0}} pino-major",
+      "groupName": "major pino",
       "matchPackagePatterns": [
         "pino"
       ],
