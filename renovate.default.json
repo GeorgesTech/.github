@@ -51,57 +51,7 @@
       "dependencyDashboardApproval": true
     },
     {
-      "prPriority": 1,
-      "groupName": "test",
-      "matchPackagePatterns": [
-        "jest",
-        "nyc",
-        "sinon",
-        "chai",
-        "mocha",
-        "nock",
-        "supertest"
-      ],
-      "automerge": true
-    },
-    {
-      "prPriority": 1,
-      "groupName": "linter",
-      "matchPackagePatterns": [
-        "eslint",
-        "lint-staged",
-        "prettier"
-      ],
-      "automerge": true
-    },
-    {
-      "prPriority": 1,
-      "groupName": "types",
-      "matchPackagePatterns": [
-        "@types/*"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "matchCurrentVersion": ">=1.0.0",
-      "automerge": true
-    },
-    {
-      "prPriority": 1,
-      "groupName": "typescript-non-major",
-      "matchPackageNames": [
-        "ts-node",
-        "typescript"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "automerge": true
-    },
-    {
-      "prPriority": 0,
-      "groupName": "all-non-major",
+      "groupName": "non-major all",
       "matchPackagePatterns": [
         "*"
       ],
@@ -117,8 +67,52 @@
       "matchCurrentVersion": ">=1.0.0"
     },
     {
-      "prPriority": -1,
-      "groupName": "typescript-major",
+      "groupName": "test",
+      "matchPackagePatterns": [
+        "jest",
+        "nyc",
+        "sinon",
+        "chai",
+        "mocha",
+        "nock",
+        "supertest"
+      ],
+      "automerge": true
+    },
+    {
+      "groupName": "linter",
+      "matchPackagePatterns": [
+        "eslint",
+        "lint-staged",
+        "prettier"
+      ],
+      "automerge": true
+    },
+    {
+      "groupName": "types",
+      "matchPackagePatterns": [
+        "@types/*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": ">=1.0.0",
+      "automerge": true
+    },
+    {
+      "groupName": "non-major typescript",
+      "matchPackageNames": [
+        "ts-node",
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
+      "groupName": "major typescript",
       "matchPackageNames": [
         "ts-node",
         "typescript"
@@ -131,8 +125,7 @@
       "dependencyDashboardApproval": true
     },
     {
-      "prPriority": -1,
-      "groupName": "mongo-major",
+      "groupName": "major mongo",
       "matchPackagePatterns": [
         "mongo",
         "mongoose"
@@ -142,8 +135,7 @@
       ]
     },
     {
-      "prPriority": -1,
-      "groupName": "fastify-major",
+      "groupName": "major fastify",
       "matchPackagePatterns": [
         "fastify"
       ],
@@ -152,8 +144,7 @@
       ]
     },
     {
-      "prPriority": -1,
-      "groupName": "pino-major",
+      "groupName": "major pino",
       "matchPackagePatterns": [
         "pino"
       ],
