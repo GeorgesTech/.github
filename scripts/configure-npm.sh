@@ -23,13 +23,13 @@ function setConfigForGithubNpmRegistry {
 }
 
 function installDenisCLI {
-    echo "npm install -g @georgestech/denis-cli"
-    npm install -g @georgestech/denis-cli 2>&1
+    echo "yarn global add github:georgestech/denis-cli"
+    yarn global add github:georgestech/denis-cli 2>&1
 }
 
 function main {
     read -p "Follow the instructions and press <enter>"
-    
+
     read -p "Do you need to publish packages to github registry (y/n)? " need_write
     [[ "$need_write" = "y" ]] && local need_write=true || local need_write=false
 

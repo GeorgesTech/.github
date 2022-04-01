@@ -64,7 +64,7 @@ async function configureGithubNpmRegistry() {
 
 async function installDenisCLI() {
     // echo ""
-    shell('npm install -g thanks 2>&1')
+  shell('yarn global add github:georgestech/denis-cli 2>&1')
 }
 
 async function main() {
@@ -72,7 +72,7 @@ async function main() {
     await configureGithubNpmRegistry()
     // configureNpmRegistry
     await installDenisCLI()
-    
+
     rl.close()
 }
 
