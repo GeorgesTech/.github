@@ -60,7 +60,7 @@ const q = promisify(rl.question).bind(rl)
 
 // function installDenisCLI() {
 //     echo ""
-//     npm install -g @georgestech/denis-cli 2>&1
+//     yarn global add github:georgestech/denis-cli 2>&1
 // }
 
 async function main() {
@@ -68,7 +68,7 @@ async function main() {
     // configureGithubNpmRegistry
     // configureNpmRegistry
     // installDenisCLI
-    
+
     rl.close()
 }
 
