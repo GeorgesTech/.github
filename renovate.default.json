@@ -15,7 +15,8 @@
     "self-hosted"
   ],
   "enabledManagers": [
-    "npm"
+    "npm",
+    "poetry"
   ],
   "vulnerabilityAlerts": {
     "enabled": false
@@ -24,7 +25,8 @@
     {
       "matchPackageNames": [
         "node",
-        "npm"
+        "npm",
+        "python"
       ],
       "enabled": false
     },
