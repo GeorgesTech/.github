@@ -18,7 +18,8 @@
     "self-hosted"
   ],
   "enabledManagers": [
-    "npm"
+    "npm",
+    "poetry"
   ],
   "vulnerabilityAlerts": {
     "enabled": false
